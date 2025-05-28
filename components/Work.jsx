@@ -2,6 +2,7 @@ import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
+import Link from 'next/link'
 
 const Work = ({isDarkMode}) => {
   return (
@@ -38,13 +39,14 @@ const Work = ({isDarkMode}) => {
     transition={{ delay: 0.9, duration: 0.6 }}
     className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
         {workData.map((project, index)=>(
+            <a href={project.link} key={index}>
             <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
             className='aspect-square bg-no-repeat bg-cover rounded-lg relative cursor-pointer group'
             style={{backgroundImage: `url(${project.bgImage})`,backgroundPosition:`50% 75%`}}>
-                <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
+                <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-2 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
                     <div>
                         <h2 className='font-semibold'>{project.title}</h2>
                         <p className='text-sm text-gray-700'>{project.description}</p>
@@ -55,18 +57,16 @@ const Work = ({isDarkMode}) => {
                 </div>
                 
             </motion.div>
+            </a>
         ))}
     </motion.div>
 
-    <motion.a 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ delay: 1.1, duration: 0.5 }}
-    href="https://github.com/JatinShivlani?tab=repositories" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
+
+    <Link
+    href="/projects" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
         Show more 
         <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='Right arrow' className='w-4'/>
-    </motion.a>
-
+    </Link>
     </motion.div>
   )
 }

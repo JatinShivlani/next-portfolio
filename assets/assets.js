@@ -84,26 +84,98 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
+export const allWorkData = [
+    {
+        title: 'Quick.it',
+        description: 'Ecommerce app (Next.js)',
+        bgImage: '/work-1.png',
+        link: 'https://quick-it.vercel.app/',
+    },
+    {
+        title: 'Uber clone',
+        description: 'Geo based app (MERN)',
+        bgImage: '/work-2.png',
+        link: 'https://uber-clone-jatinshivlani.vercel.app',
+    },
     {
         title: 'Movie-sync',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
+        description: 'Movie data site (React.js)',
         bgImage: '/work-3.png',
+        link: 'https://movie-sync.vercel.app',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Chat app',
+        description: 'chat app (websockets)',
         bgImage: '/work-4.png',
+        link:'https://chat-front-wrw7.onrender.com'
+    },
+    {
+        title: 'Doodle Book',
+        description: 'notes with auth (MERN)',
+        bgImage: '/work-5.png',
+        link:'https://doodle-book.vercel.app/'
+    },
+    {
+        title: 'Spotify-clone',
+        description: 'spotify songs (React.js)',
+        bgImage: '/work-6.png',
+        link:'https://chat-front-wrw7.onrender.com'
+    },
+    {
+        title: 'ZX-Text',
+        description: 'Text editing (React.js)',
+        bgImage: '/work-7.png',
+        link:'https://zx-text-editor.onrender.com/'
+    },
+    {
+        title: 'Swiggy-clone',
+        description: 'Swiggy (HTML,CSS,JS)',
+        bgImage: '/work-8.png',
+        link:'https://swiggy-clone-6tyn.onrender.com'
+    },
+    {
+        title: 'Netflix-clone',
+        description: 'Nextflix (HTML,CSS,JS)',
+        bgImage: '/work-9.png',
+        link:'https://netflix-clone-k9b3.onrender.com'
+    },
+    {
+        title: 'GPT-UI',
+        description: 'UI (REACT.js)',
+        bgImage: '/work-10.png',
+        link:'https://gpt-ui-jatin.vercel.app/'
+    },
+    {
+        title: 'And many more ...',
+        description: 'GITHUB',
+        bgImage: '/github.png',
+        link:'https://github.com/JatinShivlani?tab=repositories'
+    },
+]
+export const workData = [
+    {
+        title: 'Quick.it',
+        description: 'Ecommerce app (Next.js)',
+        bgImage: '/work-1.png',
+        link: 'https://quick-it.vercel.app/',
+    },
+    {
+        title: 'Uber clone',
+        description: 'Geo based app (MERN)',
+        bgImage: '/work-2.png',
+        link: 'https://uber-clone-jatinshivlani.vercel.app',
+    },
+    {
+        title: 'Movie-sync',
+        description: 'Movie data site (React.js)',
+        bgImage: '/work-3.png',
+        link: 'https://movie-sync.vercel.app',
+    },
+    {
+        title: 'Chat app',
+        description: 'chat app (websockets)',
+        bgImage: '/work-4.png',
+        link:'https://chat-front-wrw7.onrender.com'
     },
 ]
 
