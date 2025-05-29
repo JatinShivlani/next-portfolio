@@ -119,7 +119,7 @@ export const allWorkData = [
         title: 'Spotify-clone',
         description: 'spotify songs (React.js)',
         bgImage: '/work-6.png',
-        link:'https://chat-front-wrw7.onrender.com'
+        link:'https://spotify-clone-jatin.vercel.app/'
     },
     {
         title: 'ZX-Text',
