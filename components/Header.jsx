@@ -34,23 +34,7 @@ const Header = () => {
         As a Full Stack Web Developer proficient in the MERN stack, I possess a proven track record of successfully developing over 30+ websites.  My experience spans more than 1.5 years, and I maintain a strong commitment to continuous learning and skill enhancement.
         </motion.p>
 
-        <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-            <motion.a 
-            initial={{y: 30, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.6, delay: 1}}
-            href="#contact"
-            className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'
-            >contact me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
-
-            <motion.a 
-            initial={{y: 30, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.6, delay: 1.2}}
-            href="/jatin-resume.pdf" download 
-            className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
-                my resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
-        </div>
+        
     </div>
   )
 }
